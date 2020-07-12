@@ -1,0 +1,155 @@
+// main: ../style.sass
+
+/* Team */
+
+.team
+	padding-top: 140px
+	background: url("../../build/images/team/team-bg.jpg") center no-repeat #000
+	background-size: cover
+	width: 100%
+	min-height: 744px
+	@media ($mobile)
+		padding-top: 70px
+
+.team__header 
+	display: flex
+	flex-direction: column
+	text-align: center
+
+.team__title 
+	color: $white
+	margin-bottom: 30px
+
+.team__subtitle
+	font-family: 'Open Sans'
+	font-size: 14px
+	font-weight: 600
+	color: $white
+
+.team__body 
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	position: relative
+	@media ($mobile-sm)
+		justify-content: center
+
+.team__item
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+
+	&:hover
+		.team__content, .team__ellipse:after
+			opacity: 1 
+		.team__pic
+			opacity: .5 
+
+.team-active
+	.team__content, .team__ellipse:after
+		opacity: 1 
+	.team__pic
+		opacity: 1 
+	.team__ellipse
+		width: 78px
+		height: 76px
+	.team__ellipse:after
+		bottom: -72%
+
+
+.team-1
+	position: absolute
+	top: 180px
+
+.team-2
+	position: absolute
+	top: 140px
+	left: 260px
+
+.team-3
+	position: absolute
+	top: 130px
+	left: 520px
+
+.team-4
+	position: absolute
+	top: 170px
+	left: 780px
+
+.team-5
+	position: absolute
+	top: 145px
+	left: 1040px
+
+.team-1,
+.team-2,
+.team-3,
+.team-4,
+.team-5
+	@media ($notebook)
+		top: 0
+		left: 0
+		position: relative
+		margin: 90px 15px 0 15px
+		width: 17%
+	@media ($mobile)
+		width: 35%
+	@media ($mobile-sm)
+		width: 100%
+		margin: 50px 15px 30px 15px
+
+
+
+.team__ellipse
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 53px
+	height: 52px
+	border-radius: 50%
+	border: 2px solid $red
+	background: $red
+
+	margin-bottom: 75px
+	position: relative
+	@media ($notebook)
+		display: none
+
+
+.team__ellipse:after
+	content: ""  
+	display: block
+	width: 1px
+	height: 50px
+
+	background-color: $gray
+	opacity: 0
+
+	position: absolute
+	bottom: -110%
+	
+	z-index: 1
+
+	transition: opacity .1s linear,width .2s linear
+
+.team__pic
+	opacity: 1
+
+.team__content 
+	opacity: 0
+	@media ($notebook)
+		opacity: 1
+
+
+.team__name 
+	font-family: 'Open Sans'
+	font-size: 24px
+	font-weight: 600
+	color: $red
+
+.team__prof
+	font-family: 'Source Sans Pro'
+	font-size: 14px
+	font-weight: 400

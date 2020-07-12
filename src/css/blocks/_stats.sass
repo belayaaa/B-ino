@@ -1,0 +1,68 @@
+// main: ../style.sass
+
+/* Stats */
+
+.stats
+	display: flex
+	align-items: center
+	width: 100%
+	min-height: 510px
+	background: url("../../build/images/stat/bg.jpg") center no-repeat #000
+	background-size: cover
+
+.stats__inner
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	max-width: 1178px
+	margin: 0 auto
+	padding: 0 15px
+
+.stats__item 
+	display: flex
+	width: 10%
+	margin: 30px 0
+	flex-direction: column
+	align-items: center
+	text-align: center
+	@media ($notebook)
+		width: 25%
+	@media ($mobile)
+		width: 33%
+	@media ($mobile-sm)
+		width: 50%
+
+.stats__icon 
+	width: 113px
+	height: 113px
+	border: 1px solid #fff
+	border-radius: 50%
+	text-align: center
+	@media ($mobile-sm)
+		width: 90px
+		height: 90px
+
+.stats__img
+	margin-top: 39%
+
+.stats__content 
+	font-family: 'Source Sans Pro'
+	color: #fff
+	text-align: center
+
+.stats__number 
+	margin-top: 35px
+	font-weight: 700
+	font-size: 36px
+	line-height: 50px
+	@media ($tablet)
+		margin-top: 20px
+		font-size: 28px
+		line-height: 25px
+
+.stats__text 
+	font-weight: 300
+	font-size: 20px
+	@media ($tablet)
+		font-size: 16px
+

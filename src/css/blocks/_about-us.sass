@@ -1,0 +1,61 @@
+// main: ../style.sass
+
+/* About */
+
+.about 
+	padding-top: 139px
+	padding-bottom: 145px
+	@media ($tablet)
+		padding-top: 50px
+		padding-bottom: 55px
+
+
+.about__inner 
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+.about__icon 
+	margin-right: 76px
+	margin-left: 15px
+	@media ($notebook)
+		margin: 0
+
+.about__item 
+	font-family: 'Source Sans Pro'
+	
+	width: 50%
+	@media ($notebook)
+		margin-top: 50px
+		width: 100%
+		padding: 0 15px
+
+.about__title 
+	position: relative
+	padding-left: 34px
+
+	color: $gray
+	@media ($tablet)
+		    text-align: center
+
+.about__title:before
+	content: ""
+	position: absolute
+	margin-left: -34px
+	width: 4px
+	height: 40px
+	background-color: $red
+
+.about__text 
+	font-size: 14px
+	line-height: 29px
+	font-weight: 400
+	color: $gray-light
+
+	padding: 47px 0
+
+.about__button 
+	@media ($tablet)
+		display: flex
+		justify-content: center
+

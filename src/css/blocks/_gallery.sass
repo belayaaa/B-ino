@@ -1,0 +1,67 @@
+// main: ../style.sass
+
+/* Gallery*/
+
+
+.gallery 
+	display: flex
+	flex-wrap: wrap
+
+.gallery__item 
+	width: 25%
+	height: 350px
+
+	background: rgba($red, .8)
+	position: relative
+	overflow: hidden
+	
+	@media ($notebook)
+		width: 33.33%
+	@media ($tablet)
+		width: 50%
+	@media ($mobile)
+		width: 100%
+
+.gallery__item:hover .gallery__img
+    opacity: .2
+
+
+.gallery__item:hover .gallery__info 
+    opacity: 1
+
+.gallery__img
+	transform: translate3d(-50%, -50%, 0)
+	transition: opacity .2s linear
+	position: absolute
+	top: 50%
+	left: 50%
+	z-index: 11
+	min-width: 100%
+	
+
+
+.gallery__info 
+    padding: 0 15px
+    text-align: center
+    opacity: 0
+    color: $white
+    position: absolute
+    top: 50%
+    left: 0
+    z-index: 10
+    width: 100%
+
+    transform: translate3d(0, -50%, 0)
+    transition: opacity .2s linear
+
+.gallery__title 
+	font-family: 'Source Sans Pro'
+	text-transform: uppercase
+	font-size: 24px
+	font-weight: 600
+
+
+.gallery__text
+	font-family: 'Open Sans'
+	font-size: 14px
+	font-weight: 400

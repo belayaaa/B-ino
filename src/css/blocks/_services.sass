@@ -1,0 +1,99 @@
+// main: ../style.sass
+
+/* Services */
+
+.services
+	display: flex
+	position: relative
+	min-height: 768px
+	align-items: center
+	background-color: $services-bg
+
+.services__inner
+	display: flex
+	flex-direction: column
+	position: relative
+	align-items: flex-end
+	width: 58.6%
+	@media ($mobile)
+		width: 100%
+
+.services__title
+	position: relative
+	color: $blue-light
+	padding: 150px 34px 71px
+	margin-right: 116px 
+	@media ($tablet)
+		padding-top: 100px
+	@media ($mobile)
+		padding-top: 70px
+	@media ($mobile-sm)
+		margin-right: 6px 
+
+.services__title:after
+	content: ""
+	position: absolute
+	z-index: 5
+	margin-left: 34px
+	width: 4px
+	height: 40px
+	background-color: $red
+	@media ($mobile-sm)
+		display: none
+
+.services__item
+	display: flex
+	z-index: 4
+	color: #77d6fb
+	font-size: 18px
+
+.services__content
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-end
+	padding: 0 41px 67px 15px
+	&:last-child
+		padding-bottom: 0
+
+
+.services__subtitle
+	color: $red
+	padding-bottom: 19px
+
+.services__text
+	font-size: 14px
+	line-height: 29px
+	font-weight: 400
+	text-align: right
+	color: $gray-light
+	max-width: 565px
+	padding-bottom: 67px
+
+.services__text:last-child
+	padding-bottom: 0
+
+.services__img
+	@media ($mobile)
+		display: none
+
+.block__img
+	position: absolute
+	top: 0
+	left: 55%	
+	z-index: 3
+	width: 45%
+	overflow: hidden
+	@media ($mobile)
+		opacity: 0
+
+
+
+
+
+
+
+
+
+	
+    

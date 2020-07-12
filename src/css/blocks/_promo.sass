@@ -1,0 +1,38 @@
+// main: ../style.sass
+
+/* Promo */
+
+.promo
+	display: flex
+	align-items: center
+	background: url("../../build/images/promo/promo-bg.jpg") center no-repeat #000
+	background-size: cover
+	width: 100%
+	min-height: 480px
+	padding: 0 15px
+
+.promo__inner 
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+	font-family: 'Open Sans' 
+
+.promo__title
+	font-size: 36px
+	line-height: 65px
+	@media ($notebook)
+		font-size: 32px
+		line-height: 45px
+		text-align: center
+		margin-bottom: 20px
+
+.promo__subtitle
+	margin-bottom: 70px
+	font-size: 18px
+	font-weight: 400
+	@media ($notebook)
+		margin-bottom: 50px
+		font-size: 14px
+		text-align: center

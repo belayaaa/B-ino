@@ -1,0 +1,76 @@
+// main: ../style.sass
+
+/* Contact */
+
+.contact
+
+.contact__inner
+	margin-top: 62px
+	display: flex
+	justify-content: center
+	padding-bottom: 140px
+	@media ($mobile)
+		padding-bottom: 0px
+	
+.contact__left
+	margin-right: 26px
+	width: 470px
+	height: 580px
+	background: $white
+	@media ($mobile)
+		width: 100%
+		height: 530px
+		margin-right: 0
+
+.contact__right
+	width: 668px
+	height: 580px
+	background: $white
+	@media ($mobile)
+		display: none
+
+.contact__hidden-btn
+	display: none
+	@media ($mobile)
+		display: flex
+		justify-content: center
+
+		padding: 20px 20px 20px 27.5px
+
+
+
+.contact__info 
+	padding: 83px 15px 0 75px
+	@media ($mobile)
+		text-align: center
+		padding: 43px 15px 0 15px
+
+.address 
+	font-style: normal
+
+.contact__address 
+	font-style: normal
+	font-family: 'Open Sans'
+	font-weight: 400
+	font-size: 18px
+	color: $gray-light
+
+.contact__title 
+	margin-bottom: 25px
+	font-family: 'Source Sans Pro'
+	font-size: 24px
+	line-height: 24px
+	font-weight: 600
+	text-transform: uppercase
+	color: $red
+
+.contact__call
+	margin: 70px 0
+.contact__call,
+.contact__email
+	a
+		text-decoration: none
+		color: $gray-light
+		font-family: 'Open Sans'
+		font-weight: 400
+		font-size: 18px

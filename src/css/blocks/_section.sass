@@ -1,0 +1,35 @@
+// main: ../style.sass
+
+/* Section */
+
+.section
+	padding-top: 140px
+	@media ($notebook)
+	    padding-top: 100px
+	@media ($tablet)
+	    padding-top: 70px
+
+.section-bg
+	background-color: #f4f5f9
+	@media ($mobile-sm)
+		background-color: #fff
+
+
+.section__inner 
+	display: flex
+	flex-direction: column
+	text-align: center
+
+
+.section__title 
+	color: $gray
+	margin-bottom: 30px
+
+.section__subtitle
+	font-family: 'Open Sans'
+	font-size: 14px
+	font-weight: 600
+	color: $gray-light
+	max-width: 640px
+	margin: 0 auto
+	padding: 0 10px

@@ -1,0 +1,76 @@
+// main: ../style.sass
+
+/* Case*/
+
+.case-bg
+	min-height: 917px
+	@media ($mobile)
+		min-height: 640px
+	@media ($mobile-sm)
+		min-height: 600px
+	
+.case
+    max-width: 1176px
+    margin: 60px auto 0
+    position: relative
+    width: 100%
+
+
+.case__item
+    max-width: 666px
+    background-color: $white
+    width: 100%
+    position: absolute
+    top: 49px
+    z-index: 13
+    box-shadow: 3px 5px 8px -1px rgba(34, 60, 80, 0.2)
+    @media ($mobile)
+    	top: 0
+    	max-width: none
+    	box-shadow: none
+	
+
+.case__icon 
+	margin-top: 79px
+	right: 0
+	z-index: 12
+	@media ($mobile-sm)
+		margin-top: 0
+
+.case__title 
+	margin-top: 49px
+	margin-bottom: 61px
+	color: $gray
+	position: relative
+	&:after
+		content: ""
+		display: block
+		width: 42px
+		height: 2px
+		background-color: $gray
+		position: absolute
+		bottom: -100%
+		left: 48%
+
+.case__text
+	max-width: 550px
+	color: $gray-light
+	font-family: 'Source Sans Pro'
+	font-size: 14px
+	font-weight: 300
+	line-height: 24px
+	margin: 0 auto 51px
+	@media ($mobile)
+		padding: 0 10px
+
+.case__photo
+	position: absolute
+	right: 0
+	z-index: 12
+	@media ($mobile)
+		display: none
+
+.case__button
+	margin-bottom: 116px
+	@media ($mobile)
+		margin-bottom: 70px

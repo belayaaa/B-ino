@@ -1,0 +1,121 @@
+// main: ../style.sass
+
+/* Pricing */
+
+.pricing
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-bottom: 144px
+	@media ($tablet)
+		margin-bottom: 70px
+	@media ($mobile-sm)
+		margin-bottom: 0px
+
+.pricing__item
+	display: flex
+	width: 30%
+	max-width: 380px
+	flex-direction: column
+	// background: $blue-light
+	color: $gray-medium
+	margin: 50px 17px 0
+	&:hover
+		.pricing__header
+			background: $red
+		.pricing__number 
+			color: $red
+	&:last-child
+		margin-right: 0
+
+	@media ($notebook)
+		width: 40%
+	@media ($tablet)
+		width: 100%
+	@media ($mobile-sm)
+		max-width: 320px
+		width: 100%
+		margin: 20px 0 0 0
+
+.active-pricing__item
+	.pricing__header
+		background: $red
+	.pricing__number 
+		color: $red
+
+.pricing__inner
+	width: 380px
+	background: $blue-light
+	box-shadow: $shadow
+	@media ($mobile-sm)
+		max-width: 320px
+
+.pricing__header
+	display: flex
+	justify-content: center
+	background: $gray-medium
+	position: relative
+	text-align: center
+
+	transition: background .4s linear
+
+
+.pricing__title 
+	padding: 49px 0 105px
+	font-family: 'Open Sans'
+	font-size: 24px
+	font-weight: 600
+	color: #fff
+	text-transform: uppercase
+
+
+.pricing__circle
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	width: 154px
+	height: 154px
+	background: #fff
+	border: 12px solid rgba(210, 210, 210, .4)
+	border-radius: 50%
+	text-align: center
+	top: 70%
+
+
+
+.pricing__price 
+	font-family: 'Source Sans Pro'
+	color: $gray-medium
+
+
+
+.pricing__number 
+	font-weight: 700
+	font-size: 38px
+	line-height: 35px
+
+	transition: color .4s linear
+
+
+.pricing__text 
+	font-weight: 400
+	font-size: 14px
+
+.pricing__body 
+	font-family: 'Open Sans'
+	font-weight: 600
+	text-align: center
+
+.pricing__content 
+	padding-top: 130px
+	padding-bottom: 30px
+
+	font-size: 14px
+	line-height: 40px
+
+
+.pricing__button
+	font-size: 12px
+	padding-bottom: 45px
+
